@@ -26,7 +26,7 @@ where num_of_ratings = '0';
 
 select rev_name, num_of_ratings
 from reviewer, ratings
-where num_of_ratings = '0';
+where num_of_ratings is null;
 
 select dir_fname, dir_lname, mov_title
 from director , movie
